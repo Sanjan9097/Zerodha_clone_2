@@ -18,10 +18,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use(express.static('../frontend/build'));
+app.use(express.static('../FE/build'));
 
 app.get('/',(req,res)=>{
-  res.sendFile('../frontend/build/index.html');
+  res.sendFile('../FE/build/index.html');
 })
 
 // app.get("/addHoldings", async (req, res) => {
